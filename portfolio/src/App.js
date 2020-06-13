@@ -11,6 +11,7 @@ import Experience from './contents/Experience';
 import Education from './contents/Education';
 import Contact from './contents/Contact';
 import Resume from './contents/Resume';  
+import Footer from './components/Footer';
  
 class App extends Component{
   constructor(props){
@@ -27,7 +28,7 @@ class App extends Component{
 
       ],
       home: {
-        title: 'I am Kiki',
+        title: "Hello, I'm Kiara",
         subTitle: 'Welcome to my portfolio'
       },
       about: {
@@ -52,17 +53,16 @@ class App extends Component{
     return(
       <Router>
         <Container className='p-0' fluid={true}>
-          <Navbar bg='tranparent' expand='lg'>
-            <Navbar.Brand style={{ color: '#fff' }}>KM</Navbar.Brand>
-            <Navbar.Toggle className='border-0' aria-controls='navbar-toggle' />
+          <Navbar  bg='tranparent' expand='lg' >
+            <Navbar.Toggle className='border-0' aria-controls='navbar-toggle'/>
             <Navbar.Collapse id='navbar-toggle'>
-              <Nav className='ml-auto'>
-                <Link className='nav-link' style={{ color: '#fff' }} to='/'>Home</Link>
-                <Link className='nav-link'  style={{ color: '#fff' }} to='/about'>About</Link>
-                <Link className='nav-link'  style={{ color: '#fff' }} to='/experience'>Experience</Link>
-                <Link className='nav-link'  style={{ color: '#fff' }} to='/education'>Education</Link>
-                <Link className='nav-link' style={{ color: '#fff' }} to='/contact'>Contact</Link>
-                <Link className='nav-link' style={{ color: '#fff' }} to='/resume'>Resume</Link>
+              <Nav className='mx-auto h4 py-4'>
+                <Link className='nav-link' to='/'>Home</Link>
+                <Link className='nav-link'  to='/about'>About</Link>
+                <Link className='nav-link'  to='/experience'>Experience</Link>
+                <Link className='nav-link'  to='/education'>Education</Link>
+                <Link className='nav-link' to='/contact'>Contact</Link>
+                <Link className='nav-link' to='/resume'>Resume</Link>
               </Nav>
             </Navbar.Collapse>
 
@@ -73,7 +73,9 @@ class App extends Component{
           <Route path='/experience' exact render={() => <Experience title={this.state.experience.title} />} />
           <Route path='/education' exact render={() => <Education title={this.state.education.title} />} />
           <Route path='/contact' exact render={() => <Contact title={this.state.contact.title} />} />
-          <Route path='/resume' exact render={() => <Resume title={this.state.resume.title} />} />   
+          <Route path='/resume' exact render={() => <Resume title={this.state.resume.title} />} />  
+
+          <Footer /> 
 
         </Container>
 
