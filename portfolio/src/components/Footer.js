@@ -19,8 +19,8 @@ function Footer(){
                 </a>
                 </Col>
                 <Col className='p-0 d-flex justify-content-end' md={3}>
-                    Made by Kiara McMorris 
-               <span dangerouslySetInnerHTML={{ '__html': '&copy; 2020 ' }} />  
+                   <p>Made by Kiara McMorris</p>
+               <span dangerouslySetInnerHTML={{ '__html':'&copy;2020' }} />  
                 </Col>
             </Row>
         </Container>

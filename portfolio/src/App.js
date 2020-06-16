@@ -28,7 +28,7 @@ class App extends Component{
 
       ],
       home: {
-        title: "Hello, I'm Kiara",
+        title: "Hello, I'm Kiara!",
         subTitle: 'Welcome to my portfolio'
       },
       about: {
