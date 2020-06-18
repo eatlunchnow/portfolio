@@ -57,7 +57,7 @@ class App extends Component{
             <Navbar.Toggle className='border-0' aria-controls='navbar-toggle'/>
             <Navbar.Collapse id='navbar-toggle'>
               <Nav className='mx-auto h4 py-4'>
-                <Link className='nav-link' to='/'>Home</Link>
+                <Link className='nav-link' to='/'>Home</Link> 
                 <Link className='nav-link'  to='/about'>About</Link>
                 <Link className='nav-link'  to='/experience'>Experience</Link>
                 <Link className='nav-link'  to='/education'>Education</Link>
@@ -68,12 +68,12 @@ class App extends Component{
 
           </Navbar>
 
-         <Route path='/' exact render={() => <Home title={this.state.home.title} subTitle={this.state.home.subTitle} />} />
+         <Route path='/' exact render={() => <Home title={this.state.home.title} subTitle={this.state.home.subTitle} />} /> 
           <Route path='/about' exact render={() => <About title={this.state.about.title} />} />
           <Route path='/experience' exact render={() => <Experience title={this.state.experience.title} />} />
           <Route path='/education' exact render={() => <Education title={this.state.education.title} />} />
           <Route path='/contact' exact render={() => <Contact title={this.state.contact.title} />} />
-          <Route path='/resume' exact render={() => <Resume title={this.state.resume.title} />} />  
+          <Route path='/resume' exact render={() => <Resume title={this.state.resume.title}/>} />  
 
           <Footer /> 
 

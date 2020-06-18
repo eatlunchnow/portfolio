@@ -10,8 +10,17 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 
-import fon from '../img/memberpage.png';
-import meal from '../img/mealticket1.png';
+import fon from '../img/fon.png';
+import meal from '../img/mt.png';
+import hownot from '../img/hownot.png';
+import getapi from '../img/getapi.png';
+import bd from '../img/bd.png';
+
+import FONbutton from '../cardButton/FONbutton';
+import MTbutton from '../cardButton/MTbutton';
+import HowNotbutton from '../cardButton/HowNotbutton';
+import POGbutton from '../cardButton/POGbutton';
+import BDbutton from '../cardButton/BDbutton';
 
 const useStyles = makeStyles({
     root: {
@@ -27,6 +36,46 @@ function CardDisplay(){
     return(
         <Container>
             <Row className='card-info'>
+                 
+            <Col>
+       <Card className={classes.root}>
+           
+               <CardMedia
+               className={classes.media}
+               image={bd}
+               title='Burlesque Directory'
+               />
+           <CardContent>
+               <Typography gutterBottom varient='h5' component='h2'>Web Developer - Burlesque Directory</Typography>
+               <Typography variant='body2' color='textSecondary'>April 2020 - present</Typography>
+               <Typography variant='body2' color='textPrimary' component='p'>Web app for burlesque performers to network. </Typography>
+               <BDbutton />
+               </CardContent>   
+           
+       </Card>
+       </Col>
+                
+                <Col>
+       <Card className={classes.root}>
+           
+               <CardMedia
+               className={classes.media}
+               image={getapi}
+               title="Pot O' Gold"
+               />
+           <CardContent>
+               <Typography gutterBottom varient='h5' component='h2'>Database Administrator/Backend Engineer - Pot O' Gold</Typography>
+               <Typography variant='body2' color='textSecondary'>March 2020 - April 2020</Typography>
+               <Typography variant='body2' color='textPrimary' component='p'>Site re-built for Pot O' Gold, a company that 
+               provides coffee based supplies and repair to businesses. </Typography>
+               <POGbutton />
+               </CardContent>   
+           
+       </Card>
+       </Col>
+       
+       </Row>
+            <Row className='card-info'>
                 <Col>
        <Card className={classes.root}>
            
@@ -40,6 +89,7 @@ function CardDisplay(){
                <Typography variant='body2' color='textSecondary'>April 2019 - June 2019</Typography>
                <Typography variant='body2' color='textPrimary' component='p'>Site re-built for Friends of Noise, 
                a non-profit focused on providing safe spaces for youth develop art and leadership skills. </Typography>
+               <FONbutton />
                </CardContent>   
            
        </Card>
@@ -56,6 +106,26 @@ function CardDisplay(){
                <Typography gutterBottom varient='h5' component='h2'>Web Developer - Meal Ticket</Typography>
                <Typography variant='body2' color='textSecondary'>January 2019 - March 2019</Typography>
                <Typography variant='body2' color='textPrimary' component='p'>Grocery store list app Meal Ticket.  </Typography>
+               <MTbutton />
+               </CardContent>   
+           
+       </Card>
+       </Col>
+       </Row>
+       <Row className='card-info'>
+                <Col>
+       <Card className={classes.root}>
+           
+               <CardMedia
+               className={classes.media}
+               image={hownot}
+               title='How Not To Be A D*ck'  
+               />
+           <CardContent>
+               <Typography gutterBottom varient='h5' component='h2'>Android App Developer - How Not To Be A D*ck</Typography>
+               <Typography variant='body2' color='textSecondary'>April 2018 - June 2018</Typography>
+               <Typography variant='body2' color='textPrimary' component='p'>Quiz game. </Typography>
+               <HowNotbutton />
                </CardContent>   
            
        </Card>

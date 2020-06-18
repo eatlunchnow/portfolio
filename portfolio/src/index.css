@@ -36,3 +36,9 @@ code {
   padding: 5px;
   margin: 5px;
 }
+
+.doc-pdf {
+  height: 100%;
+  width: 100%;
+}
+
