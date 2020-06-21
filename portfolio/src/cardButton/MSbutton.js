@@ -9,7 +9,6 @@ import IconButton from "@material-ui/core/IconButton";
 import CloseIcon from "@material-ui/icons/Close";
 import Typography from "@material-ui/core/Typography";
 
-
 const styles = theme => ({
   root: {
     margin: 0,
@@ -75,7 +74,7 @@ function CustomizedDialogs() {
         open={open}
       >
         <DialogTitle id="customized-dialog-title" onClose={handleClose}>
-          Burlesque Directory
+          The Mars Society
         </DialogTitle>
         <DialogContent dividers>
           <Typography gutterBottom>
